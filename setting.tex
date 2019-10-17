@@ -1,6 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%set color%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\definecolor{code-comments}{RGB}{0,180,0}   
-\definecolor{background}{RGB}{234,244,244}
+% \definecolor{code-comments}{RGB}{0,180,0}   
+% \definecolor{background}{RGB}{234,244,244}
+\definecolor{code-comments}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{background}{gray}{0.95}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%set theoremstyle%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newtheoremstyle{nrush-thm-style}% hnamei
@@ -38,14 +40,25 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%set code-style%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstset{
+language=[ANSI]{C},
 backgroundcolor = \color{background},
-keywordstyle=\color{blue!100},
+keywordstyle=\color{blue!100}\bfseries,
 commentstyle=\color{code-comments},
-basicstyle=\small\sffamily ,
+basicstyle=\small\ttfamily ,
 language=Matlab,
 breaklines=true,
 captionpos=b,
 frame = single,
+framerule=0pt,
+tabsize = 4,
+showtabs=false,
+stringstyle=\color{purple},
+title=\lstname,
+rulesepcolor=\color{red!20!green!20!blue!20},
+morekeywords={*,define,*,include...},
+extendedchars=false,
+directivestyle=\color{blue},
+captionpos=b,
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%set algorithm-style%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
