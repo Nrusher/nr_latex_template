@@ -34,10 +34,18 @@
 \end{framed}
 
 \subsection{列表}
+
+\noindent 无序
 \begin{itemize}
     \item \zhlipsum[1][name =jingyesi]
-    \item \zhlipsum[1][name =jingyesi]
+    \item \zhlipsum[2][name =jingyesi]
 \end{itemize}
+
+\noindent 有序
+\begin{enumerate}
+    \item \zhlipsum[1][name =jingyesi]
+    \item \zhlipsum[2][name =jingyesi]
+\end{enumerate}
 
 \subsection{代码}
 \begin{lstlisting}[language = C]
@@ -50,5 +58,18 @@
         return 0;
     }
 \end{lstlisting}
+
+\subsection{表格}
+\begin{tabular}{ccccc}
+    \hline
+    \hline
+    a & b & c & d & e\\
+    \hline
+    1 & 2 & 3 & 4 & 5\\ 
+    1 & 2 & 3 & 4 & 5\\
+    \hline
+\end{tabular}
+
+\footnote{脚注内容}​
 
 \end{document}
